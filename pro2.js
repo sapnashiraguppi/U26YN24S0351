@@ -9,7 +9,7 @@ const server=http.createServer((req,resp)=>{
         resp.write(`</form>`)
         resp.end();
     }
-    else if(req.method=="post"){
+    else if(req.method=="POST"){
         let body=``
         req.on("data",(chunks)=>{
             body=body+chunks
