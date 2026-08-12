@@ -7,7 +7,7 @@ const server=http.createServer((req,resp)=>{
         })
         req.on("end",()=>{
             let data=JSON.parse(body)
-            console.log(data)
+            console.log()
             resp.writeHead(200,{"content-type":"text/html"})
             resp.write(`<h1>Your Information Received</h1>`)
             resp.end()
